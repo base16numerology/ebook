@@ -7,26 +7,26 @@ This book treats modern computing primitives (hex, Unicode bytes, Unix timestamp
 ## Repository contents
 
 - Manuscript (Markdown, in reading order):
-	- `00-front-matter.md`
-	- `01-table-of-contents.md`
-	- `02-introduction-when-the-soul-learned-to-count-in-hex.md`
-	- `03-chapter-1-the-power-of-sixteen.md`
-	- `04-chapter-2-what-is-base-16-numerology.md`
-	- `05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md`
-	- `06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md`
-	- `07-chapter-5-the-sixteen-archetypes-0-f-explained.md`
-	- `08-chapter-6-the-hex-soul-map-combining-your-numbers.md`
-	- `09-chapter-7-cycles-timestamps-and-personal-hex-years.md`
-	- `10-chapter-8-relationships-work-and-places-in-hex.md`
-	- `11-chapter-9-practice-case-studies-and-skeptic-mode.md`
-	- `12-appendix-a-bytes-nibbles-and-hex-archetypes.md`
-	- `13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md`
-	- `14-appendix-c-worksheets-prompts-and-the-app.md`
-- Cover image: `cover.png`
-- EPUB builder: `build_epub.py`
+	- [00-front-matter.md](00-front-matter.md)
+	- [01-table-of-contents.md](01-table-of-contents.md)
+	- [02-introduction-when-the-soul-learned-to-count-in-hex.md](02-introduction-when-the-soul-learned-to-count-in-hex.md)
+	- [03-chapter-1-the-power-of-sixteen.md](03-chapter-1-the-power-of-sixteen.md)
+	- [04-chapter-2-what-is-base-16-numerology.md](04-chapter-2-what-is-base-16-numerology.md)
+	- [05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md](05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md)
+	- [06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md](06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md)
+	- [07-chapter-5-the-sixteen-archetypes-0-f-explained.md](07-chapter-5-the-sixteen-archetypes-0-f-explained.md)
+	- [08-chapter-6-the-hex-soul-map-combining-your-numbers.md](08-chapter-6-the-hex-soul-map-combining-your-numbers.md)
+	- [09-chapter-7-cycles-timestamps-and-personal-hex-years.md](09-chapter-7-cycles-timestamps-and-personal-hex-years.md)
+	- [10-chapter-8-relationships-work-and-places-in-hex.md](10-chapter-8-relationships-work-and-places-in-hex.md)
+	- [11-chapter-9-practice-case-studies-and-skeptic-mode.md](11-chapter-9-practice-case-studies-and-skeptic-mode.md)
+	- [12-appendix-a-bytes-nibbles-and-hex-archetypes.md](12-appendix-a-bytes-nibbles-and-hex-archetypes.md)
+	- [13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md](13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md)
+	- [14-appendix-c-worksheets-prompts-and-the-app.md](14-appendix-c-worksheets-prompts-and-the-app.md)
+- Cover image: [cover.png](cover.png)
+- EPUB builder: [build_epub.py](build_epub.py)
 - Built artifacts:
-	- `base16_numerology_book.epub` (existing)
-	- `base16_numerology_from_md.epub` (output name used by `build_epub.py`)
+	- [base16_numerology.epub](base16_numerology.epub)
+
 
 ## Build the EPUB
 
