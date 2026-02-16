@@ -20,6 +20,48 @@ AUTHOR = "Horace Chan"
 OUTPUT_EPUB = "base16_numerology.epub"
 COVER_FILENAME = "cover.png"        # optional; put cover.png next to this script
 
+STYLESHEET = """\
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  margin: 1em;
+}
+pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72em;
+  line-height: 1.3;
+  white-space: pre;
+  overflow-x: auto;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.8em;
+}
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 0.4em 0.6em;
+  text-align: left;
+}
+th {
+  background-color: #eee;
+}
+"""
+
 
 def read_markdown_files(chapters_dir):
     """
@@ -69,7 +111,7 @@ def md_to_xhtml(title, md_text):
     body_html = markdown.markdown(
         md_text,
         output_format="xhtml1",
-        extensions=["mdx_math"],
+        extensions=["mdx_math", "fenced_code", "tables"],
         extension_configs={
             "mdx_math": {
                 "enable_dollar_delimiter": True,
@@ -119,6 +161,7 @@ def md_to_xhtml(title, md_text):
 <head>
   <title>{html.escape(title)}</title>
   <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 {body_html}
@@ -135,6 +178,7 @@ def cover_to_xhtml(book_title):
 <head>
   <title>{html.escape(book_title)} – Cover</title>
   <meta charset=\"utf-8\" />
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />
 </head>
 <body>
   <div style=\"text-align:center; margin:0; padding:0;\">
@@ -156,7 +200,9 @@ def build_epub(chapters_dir, output_epub, book_title, author, cover_filename=Non
     book_id = str(uuid.uuid4())
     now = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    manifest_items = []
+    manifest_items = [
+        '<item id="stylesheet" href="style.css" media-type="text/css"/>',
+    ]
     spine_items = []
     xhtml_files = []
     nav_labels = []
@@ -262,6 +308,7 @@ def build_epub(chapters_dir, output_epub, book_title, author, cover_filename=Non
         # OEBPS core files
         zf.writestr("OEBPS/content.opf", content_opf)
         zf.writestr("OEBPS/toc.ncx", toc_ncx)
+        zf.writestr("OEBPS/style.css", STYLESHEET)
         # Chapters
         for xhtml_name, xhtml_content in xhtml_files:
             zf.writestr(f"OEBPS/{xhtml_name}", xhtml_content.encode("utf-8"))
