@@ -275,7 +275,8 @@ def build_epub(chapters_dir, output_epub, book_title, author, cover_filename=Non
 
 if __name__ == "__main__":
   base_dir = os.path.dirname(os.path.abspath(__file__))
-  cover_path = os.path.join(base_dir, COVER_FILENAME)
+  chapters_dir = os.path.join(base_dir, "src")
+  cover_path = os.path.join(chapters_dir, COVER_FILENAME)
   out_path = os.path.join(base_dir, OUTPUT_EPUB)
-  build_epub(base_dir, out_path, BOOK_TITLE, AUTHOR, cover_path)
+  build_epub(chapters_dir, out_path, BOOK_TITLE, AUTHOR, cover_path)
 

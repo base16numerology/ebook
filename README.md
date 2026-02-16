@@ -7,21 +7,21 @@ This book treats modern computing primitives (hex, Unicode bytes, Unix timestamp
 ## Repository contents
 
 - Manuscript (Markdown, in reading order):
-  - [00-front-matter.md](00-front-matter.md)
-  - [01-table-of-contents.md](01-table-of-contents.md)
-  - [02-introduction-when-the-soul-learned-to-count-in-hex.md](02-introduction-when-the-soul-learned-to-count-in-hex.md)
-  - [03-chapter-1-the-power-of-sixteen.md](03-chapter-1-the-power-of-sixteen.md)
-  - [04-chapter-2-what-is-base-16-numerology.md](04-chapter-2-what-is-base-16-numerology.md)
-  - [05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md](05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md)
-  - [06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md](06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md)
-  - [07-chapter-5-the-sixteen-archetypes-0-f-explained.md](07-chapter-5-the-sixteen-archetypes-0-f-explained.md)
-  - [08-chapter-6-the-hex-soul-map-combining-your-numbers.md](08-chapter-6-the-hex-soul-map-combining-your-numbers.md)
-  - [09-chapter-7-cycles-timestamps-and-personal-hex-years.md](09-chapter-7-cycles-timestamps-and-personal-hex-years.md)
-  - [10-chapter-8-relationships-work-and-places-in-hex.md](10-chapter-8-relationships-work-and-places-in-hex.md)
-  - [11-chapter-9-practice-case-studies-and-skeptic-mode.md](11-chapter-9-practice-case-studies-and-skeptic-mode.md)
-  - [12-appendix-a-bytes-nibbles-and-hex-archetypes.md](12-appendix-a-bytes-nibbles-and-hex-archetypes.md)
-  - [13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md](13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md)
-  - [14-appendix-c-worksheets-prompts-and-the-app.md](14-appendix-c-worksheets-prompts-and-the-app.md)
+  - [src/00-front-matter.md](src/00-front-matter.md)
+  - [src/01-table-of-contents.md](src/01-table-of-contents.md)
+  - [src/02-introduction-when-the-soul-learned-to-count-in-hex.md](src/02-introduction-when-the-soul-learned-to-count-in-hex.md)
+  - [src/03-chapter-1-the-power-of-sixteen.md](src/03-chapter-1-the-power-of-sixteen.md)
+  - [src/04-chapter-2-what-is-base-16-numerology.md](src/04-chapter-2-what-is-base-16-numerology.md)
+  - [src/05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md](src/05-chapter-3-from-text-to-hex-ascii-unicode-and-the-libre-256-hash.md)
+  - [src/06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md](src/06-chapter-4-birth-in-machine-time-unix-epoch-and-your-hex-life-path.md)
+  - [src/07-chapter-5-the-sixteen-archetypes-0-f-explained.md](src/07-chapter-5-the-sixteen-archetypes-0-f-explained.md)
+  - [src/08-chapter-6-the-hex-soul-map-combining-your-numbers.md](src/08-chapter-6-the-hex-soul-map-combining-your-numbers.md)
+  - [src/09-chapter-7-cycles-timestamps-and-personal-hex-years.md](src/09-chapter-7-cycles-timestamps-and-personal-hex-years.md)
+  - [src/10-chapter-8-relationships-work-and-places-in-hex.md](src/10-chapter-8-relationships-work-and-places-in-hex.md)
+  - [src/11-chapter-9-practice-case-studies-and-skeptic-mode.md](src/11-chapter-9-practice-case-studies-and-skeptic-mode.md)
+  - [src/12-appendix-a-bytes-nibbles-and-hex-archetypes.md](src/12-appendix-a-bytes-nibbles-and-hex-archetypes.md)
+  - [src/13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md](src/13-appendix-b-ascii-unicode-and-the-secret-life-of-characters.md)
+  - [src/14-appendix-c-worksheets-prompts-and-the-app.md](src/14-appendix-c-worksheets-prompts-and-the-app.md)
 - Cover image: [cover.png](cover.png)
 - EPUB builder: [build_epub.py](build_epub.py)
 - Built artifacts:
@@ -45,7 +45,7 @@ uv sync
 
 ### Run
 
-[build_epub.py](build_epub.py) reads the manuscript Markdown files in the same directory as the script, matching `??-*.md` (for example [00-front-matter.md](00-front-matter.md), [01-table-of-contents.md](01-table-of-contents.md), …). It ignores other Markdown files like [README.md](README.md).
+[build_epub.py](build_epub.py) reads the manuscript Markdown files from the `src/` subdirectory, matching `??-*.md` (for example [src/02-introduction-when-the-soul-learned-to-count-in-hex.md](src/02-introduction-when-the-soul-learned-to-count-in-hex.md), [src/03-chapter-1-the-power-of-sixteen.md](src/03-chapter-1-the-power-of-sixteen.md), …). It ignores other Markdown files like [README.md](README.md) in the root directory.
 
 ```powershell
 Set-Location b:\base16numerology\ebook
