@@ -46,9 +46,9 @@ Use this worksheet to record your core numbers. You can fill it out by hand usin
 ║                                                  ║
 ║          ┌─────────────────────┐                 ║
 ║          │  EXPRESSION         │                 ║
-║          │  Digit: ___        │                 ║
-║          │  Archetype: _____  │                 ║
-║          │  Realm: ________   │                 ║
+║          │  Digit: ___         │                 ║
+║          │  Archetype: _____   │                 ║
+║          │  Realm: ________    │                 ║
 ║          └────────┬────────────┘                 ║
 ║                   │                              ║
 ║  ┌────────────┐   │   ┌────────────────┐         ║
@@ -60,16 +60,16 @@ Use this worksheet to record your core numbers. You can fill it out by hand usin
 ║                   │                              ║
 ║          ┌────────┴────────────┐                 ║
 ║          │  LIFE PATH          │                 ║
-║          │  Digit: ___        │                 ║
-║          │  Archetype: _____  │                 ║
-║          │  Realm: ________   │                 ║
+║          │  Digit: ___         │                 ║
+║          │  Archetype: _____   │                 ║
+║          │  Realm: ________    │                 ║
 ║          └────────┬────────────┘                 ║
 ║                   │                              ║
 ║          ┌────────┴────────────┐                 ║
 ║          │  MATURITY           │                 ║
-║          │  Digit: ___        │                 ║
-║          │  Archetype: _____  │                 ║
-║          │  Realm: ________   │                 ║
+║          │  Digit: ___         │                 ║
+║          │  Archetype: _____   │                 ║
+║          │  Realm: ________    │                 ║
 ║          └─────────────────────┘                 ║
 ║                                                  ║
 ║  Realm Summary:                                  ║
@@ -125,7 +125,7 @@ After filling out your Hex Soul Map, complete these sentences:
 Use this to track the archetypal flavor of each year. Fill it in on or near each birthday.
 
 ```
-╔════════════════════════════════════════════════════════════╗
+╔═══════╦═══════╦════════════════╦══════════════════════════╗
 ║  PERSONAL HEX YEAR LOG                                    ║
 ╠═══════╦═══════╦════════════════╦══════════════════════════╣
 ║ Year  ║ Digit ║   Archetype    ║  Themes / Events / Notes ║
@@ -161,11 +161,11 @@ For comparing your Hex Soul Map with another person's:
 ║                                                          ║
 ║  Position       │ Person A    │ Person B    │ Composite  ║
 ║  ───────────────┼─────────────┼─────────────┼──────────  ║
-║  Life Path      │ ___ (_____)│ ___ (_____)│ ___ (____) ║
-║  Expression     │ ___ (_____)│ ___ (_____)│ ___ (____) ║
-║  Soul Urge      │ ___ (_____)│ ___ (_____)│ ___ (____) ║
-║  Personality    │ ___ (_____)│ ___ (_____)│ ___ (____) ║
-║  Maturity       │ ___ (_____)│ ___ (_____)│ ___ (____) ║
+║  Life Path      │ ___ (_____) │ ___ (_____) │ ___ (____) ║
+║  Expression     │ ___ (_____) │ ___ (_____) │ ___ (____) ║
+║  Soul Urge      │ ___ (_____) │ ___ (_____) │ ___ (____) ║
+║  Personality    │ ___ (_____) │ ___ (_____) │ ___ (____) ║
+║  Maturity       │ ___ (_____) │ ___ (_____) │ ___ (____) ║
 ║                                                          ║
 ║  Shared digits: _________________________________________║
 ║  Shared realms: _________________________________________║

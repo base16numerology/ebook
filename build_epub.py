@@ -198,7 +198,7 @@ def build_epub(chapters_dir, output_epub, book_title, author, cover_filename=Non
         )
 
     book_id = str(uuid.uuid4())
-    now = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     manifest_items = [
         '<item id="stylesheet" href="style.css" media-type="text/css"/>',
